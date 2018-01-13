@@ -5,44 +5,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center|top"
     android:orientation="horizontal"
     tools:context="com.example.cpaine.messingaround.MainActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-        <TextView
-            android:id="@+id/firstTextView"
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_weight="1"
+            android:text="1st Button"
+            android:padding="15sp"
             />
-
-        <TextView
-            android:id="@+id/secondTextView"
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/firstTextView"
-            android:text="This is a test of the"
-            android:layout_weight="1"
+            android:text="2nd Button"
+            android:padding="15sp"
             />
-
-        <TextView
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/secondTextView"
-            android:text="More Random text"
-            android:layout_weight="1"
+            android:text="3rd Button"
+            android:padding="15sp"
             />
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
